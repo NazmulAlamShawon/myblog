@@ -1,4 +1,4 @@
-import { Label, TextInput } from 'flowbite-react';
+import { Button, Label, TextInput } from 'flowbite-react';
 import {Link} from 'react-router-dom';
 export default function SignUp() {
   return (
@@ -37,7 +37,16 @@ export default function SignUp() {
                 id='password'
                />
              </div>
+             <Button gradientDuoTone='purpletopink' type='submit'>
+              sign up
+             </Button>
            </form>
+           <div className='flex gap-2 text-sm mt-5'>
+            <span>Have an account?</span>
+          <Link to='/sign-in'>
+           Sign in
+         </Link>
+           </div>
         </div>
 
        </div>
